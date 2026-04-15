@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.petcare</groupId>
-	<artifactId>tracker</artifactId>
+	<artifactId>MedTracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

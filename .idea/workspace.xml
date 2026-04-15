@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8e9cd6a-d678-41d9-b231-7dca7415359f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/petcare/tracker/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/petcare/tracker/PetController.java" afterDir="false" />
+    <list default="true" id="c8e9cd6a-d678-41d9-b231-7dca7415359f" name="Changes" comment="M1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/MedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petcare/tracker/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petcare/tracker/PetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/petcare/tracker/TrackerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/TrackerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/petcare/tracker/TrackerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/TrackerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mikhailblk"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikhailblk&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mikhailblk/pet-care-tracker.git",
-    "accountId": "1eb7d43f-29c7-4a42-a24a-4aecc19a6a71"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mikhailblk/pet-care-tracker.git&quot;,
+    &quot;accountId&quot;: &quot;1eb7d43f-29c7-4a42-a24a-4aecc19a6a71&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -35,9 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3CGJN3DA3ojdNWm6NWdQd8VZy28" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,11 +55,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/white/IdeaProjects/MedTracker"
   }
 }]]></component>
   <component name="TaskManager">
@@ -63,6 +72,19 @@
       <option name="presentableId" value="Default" />
       <updated>1776005929967</updated>
     </task>
+    <task id="LOCAL-00001" summary="M1">
+      <option name="closed" value="true" />
+      <created>1776007088633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776007088634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="M1" />
+    <option name="LAST_COMMIT_MESSAGE" value="M1" />
   </component>
 </project>
