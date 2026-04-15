@@ -1,1 +1,1 @@
-# Eine Webanwendung zur Verwaltung von Haustieren. Nutzer können ihre Haustiere erfassen, Fütterungszeiten festlegen und den Gesundheitszustand überwachen.
+# Eine Webanwendung für Patienten und Ärzte zur Verwaltung von Medikamenteneinnahmen. Patienten können ihre Einnahmen tracken, Ärzte haben die Möglichkeit, Rezepte auszustellen und die Compliance zu überwachen.
