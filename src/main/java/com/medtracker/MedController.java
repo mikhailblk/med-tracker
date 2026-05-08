@@ -1,34 +1,30 @@
 package com.medtracker;
 
 import org.springframework.web.bind.annotation.*;
+import java.util.List;
 
 @RestController
+@RequestMapping("/med")
 public class MedController {
+
+    private final MedicationRepository repo;
+
+    public MedController(MedicationRepository repo) {
+        this.repo = repo;
+    }
 
     @GetMapping("/hello")
     public String hello() {
         return "MedTracker is running!";
     }
 
-    @GetMapping("/medication/sample")
-    public MedicationSample sampleMedication() {
-        return new MedicationSample("Ibuprofen", "400mg", "Max Mustermann");
+    @GetMapping("/medications")
+    public List<Medication> getAll() {
+        return repo.findAll();
     }
 
-    // Eine einfache Datenklasse ohne Datenbank
-    static class MedicationSample {
-        private final String name;
-        private final String dosage;
-        private final String patientName;
-
-        public MedicationSample(String name, String dosage, String patientName) {
-            this.name = name;
-            this.dosage = dosage;
-            this.patientName = patientName;
-        }
-
-        public String getName() { return name; }
-        public String getDosage() { return dosage; }
-        public String getPatientName() { return patientName; }
+    @PostMapping("/medications")
+    public Medication create(@RequestBody Medication medication) {
+        return repo.save(medication);
     }
 }
