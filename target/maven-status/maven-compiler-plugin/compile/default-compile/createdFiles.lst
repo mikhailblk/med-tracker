@@ -1,3 +1,6 @@
-com\medtracker\Medication.class
+com\medtracker\dto\MedicationDTO.class
+com\medtracker\service\MedicationService.class
+com\medtracker\repository\MedicationRepository.class
 com\medtracker\TrackerApplication.class
-com\medtracker\MedController.class
+com\medtracker\entity\Medication.class
+com\medtracker\controller\MedicationController.class
