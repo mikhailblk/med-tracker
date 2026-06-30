@@ -2,6 +2,7 @@ package com.medtracker.entity;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+@Entity
 public class Message {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
