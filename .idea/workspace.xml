@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e9cd6a-d678-41d9-b231-7dca7415359f" name="Changes" comment="M3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MedicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/dto/MedicationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/entity/Medication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/repository/MedicationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/service/MedicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/controller/MedicationControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/service/MedicationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/AppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/entity/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/repository/AppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/service/AppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/service/MessageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/MedController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/medtracker-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/Medication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/MedicationRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +38,12 @@
     &quot;assignee&quot;: &quot;mikhailblk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mikhailblk/med-tracker.git&quot;,
-    &quot;accountId&quot;: &quot;1eb7d43f-29c7-4a42-a24a-4aecc19a6a71&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mikhailblk/med-tracker.git",
+    "accountId": "815a2162-0357-49c7-b308-4c0eaed0f412"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,17 +65,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.TrackerApplication.executor": "Run",
+    "JUnit.MedicationControllerTest.executor": "Run",
+    "JUnit.MedicationControllerTest.getAllMedications_shouldReturnList.executor": "Run",
+    "JUnit.MedicationServiceTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/white/IdeaProjects/MedTracker",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,13 +89,16 @@
       <recent name="com.medtracker.service" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TrackerApplication">
     <configuration name="TrackerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DB_URL" value="jdbc:postgresql://dpg-d8pu6i28qa3s73c73csg-a.frankfurt-postgres.render.com:5432/med_tracker_db_v2 DB_USER=med_tracker_db_v2_user DB_PASSWORD=W68f1ewB6h5V9f0wU1wkQgYvpR7holvv" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.medtracker.TrackerApplication" />
       <module name="MedTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.medtracker.service.*" />
+          <option name="PATTERN" value="com.medtracker.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +106,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MedicationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MedTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medtracker.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.medtracker.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.controller.MedicationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicationControllerTest.getAllMedications_shouldReturnList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MedTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medtracker.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.medtracker.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.controller.MedicationControllerTest" />
+      <option name="METHOD_NAME" value="getAllMedications_shouldReturnList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MedTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medtracker.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.medtracker.service" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.service.MedicationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TrackerApplication" />
+      <item itemvalue="JUnit.MedicationControllerTest" />
+      <item itemvalue="JUnit.MedicationControllerTest.getAllMedications_shouldReturnList" />
+      <item itemvalue="JUnit.MedicationServiceTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TrackerApplication" />
+        <item itemvalue="JUnit.MedicationServiceTest" />
+        <item itemvalue="JUnit.MedicationControllerTest" />
+        <item itemvalue="JUnit.MedicationControllerTest.getAllMedications_shouldReturnList" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.33" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
