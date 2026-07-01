@@ -11,6 +11,7 @@ public class Medication {
     private String name;
     private String dosage;
     private String time;
+    private String patientName;
 
     public Medication() {}
 
@@ -32,4 +33,7 @@ public class Medication {
 
     public String getTime() { return time; }
     public void setTime(String time) { this.time = time; }
+
+    public String getPatientName() { return patientName; }
+    public void setPatientName(String patientName) { this.patientName = patientName; }
 }

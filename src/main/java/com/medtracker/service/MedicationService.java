@@ -17,28 +17,42 @@ public class MedicationService {
         this.medicationRepository = medicationRepository;
     }
 
-    // Konvertiert ein DTO in eine Entity (für POST)
     private Medication toEntity(MedicationDTO dto) {
-        return new Medication(dto.getName(), dto.getDosage(), dto.getTime());
+        Medication m = new Medication(dto.getName(), dto.getDosage(), dto.getTime());
+        m.setPatientName(dto.getPatientName());  // ← NEU
+        return m;
     }
 
-    // Konvertiert eine Entity in ein DTO (für GET)
     private MedicationDTO toDto(Medication entity) {
-        return new MedicationDTO(entity.getName(), entity.getDosage(), entity.getTime());
+        MedicationDTO dto = new MedicationDTO(entity.getName(), entity.getDosage(), entity.getTime());
+        dto.setPatientName(entity.getPatientName());  // ← NEU
+        dto.setId(entity.getId());  // ← NEU (damit Frontend die ID zum Löschen hat)
+        return dto;
     }
 
-    // Neue Medikation speichern (POST)
     public MedicationDTO saveMedication(MedicationDTO dto) {
         Medication entity = toEntity(dto);
         Medication savedEntity = medicationRepository.save(entity);
         return toDto(savedEntity);
     }
 
-    // Alle Medikationen holen (GET)
     public List<MedicationDTO> getAllMedications() {
         return medicationRepository.findAll()
                 .stream()
                 .map(this::toDto)
                 .collect(Collectors.toList());
+    }
+
+
+    public List<MedicationDTO> getMedicationsByPatient(String patientName) {
+        return medicationRepository.findAll()
+                .stream()
+                .filter(m -> patientName.equals(m.getPatientName()))
+                .map(this::toDto)
+                .collect(Collectors.toList());
+    }
+
+    public void deleteMedication(Long id) {
+        medicationRepository.deleteById(id);
     }
 }

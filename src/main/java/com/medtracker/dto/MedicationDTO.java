@@ -5,8 +5,10 @@ public class MedicationDTO {
     private String name;
     private String dosage;
     private String time;
+    private String patientName;
+    private Long id;
 
-    // Standard-Konstruktor (wichtig für die Umwandlung durch Jackson)
+    // Standard-Konstruktor
     public MedicationDTO() {}
 
     public MedicationDTO(String name, String dosage, String time) {
@@ -24,4 +26,10 @@ public class MedicationDTO {
 
     public String getTime() { return time; }
     public void setTime(String time) { this.time = time; }
+
+    public String getPatientName() { return patientName; }
+    public void setPatientName(String patientName) { this.patientName = patientName; }
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/medications")
-@CrossOrigin(origins = "*") // Erlaubt Zugriff vom Frontend
+@CrossOrigin(origins = "*")
 public class MedicationController {
 
     private final MedicationService medicationService;
@@ -17,9 +17,13 @@ public class MedicationController {
         this.medicationService = medicationService;
     }
 
-    // GET /api/medications
+    // GET /api/medications?patientName=Anna Schmidt
     @GetMapping
-    public List<MedicationDTO> getAllMedications() {
+    public List<MedicationDTO> getMedications(
+            @RequestParam(required = false) String patientName) {
+        if (patientName != null && !patientName.isBlank()) {
+            return medicationService.getMedicationsByPatient(patientName);
+        }
         return medicationService.getAllMedications();
     }
 
@@ -27,5 +31,11 @@ public class MedicationController {
     @PostMapping
     public MedicationDTO addMedication(@RequestBody MedicationDTO medicationDTO) {
         return medicationService.saveMedication(medicationDTO);
+    }
+
+    // DELETE /api/medications/{id}
+    @DeleteMapping("/{id}")
+    public void deleteMedication(@PathVariable Long id) {
+        medicationService.deleteMedication(id);
     }
 }
