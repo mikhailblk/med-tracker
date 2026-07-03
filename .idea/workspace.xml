@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c8e9cd6a-d678-41d9-b231-7dca7415359f" name="Changes" comment="M3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/AppointmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MedicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MedicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/dto/MedicationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/dto/MedicationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/entity/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/entity/Medication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/service/MedicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/service/MedicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <recent name="com.medtracker.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrackerApplication">
+  <component name="RunManager" selected="JUnit.MedicationControllerTest">
     <configuration name="TrackerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="DB_URL" value="jdbc:postgresql://dpg-d8pu6i28qa3s73c73csg-a.frankfurt-postgres.render.com:5432/med_tracker_db_v2 DB_USER=med_tracker_db_v2_user DB_PASSWORD=W68f1ewB6h5V9f0wU1wkQgYvpR7holvv" />
@@ -154,9 +154,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MedicationControllerTest" />
         <item itemvalue="Application.TrackerApplication" />
         <item itemvalue="JUnit.MedicationServiceTest" />
-        <item itemvalue="JUnit.MedicationControllerTest" />
         <item itemvalue="JUnit.MedicationControllerTest.getAllMedications_shouldReturnList" />
       </list>
     </recent_temporary>

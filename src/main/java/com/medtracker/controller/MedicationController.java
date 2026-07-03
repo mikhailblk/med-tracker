@@ -2,6 +2,8 @@ package com.medtracker.controller;
 
 import com.medtracker.dto.MedicationDTO;
 import com.medtracker.service.MedicationService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.List;
 public class MedicationController {
 
     private final MedicationService medicationService;
+    Logger logger = LoggerFactory.getLogger(MedicationController.class);
 
     public MedicationController(MedicationService medicationService) {
         this.medicationService = medicationService;
@@ -24,18 +27,21 @@ public class MedicationController {
         if (patientName != null && !patientName.isBlank()) {
             return medicationService.getMedicationsByPatient(patientName);
         }
+        logger.info("getMedications called");
         return medicationService.getAllMedications();
     }
 
     // POST /api/medications
     @PostMapping
     public MedicationDTO addMedication(@RequestBody MedicationDTO medicationDTO) {
+        logger.info("addMedication called");
         return medicationService.saveMedication(medicationDTO);
     }
 
     // DELETE /api/medications/{id}
     @DeleteMapping("/{id}")
     public void deleteMedication(@PathVariable Long id) {
+        logger.info("deleteMedication called");
         medicationService.deleteMedication(id);
     }
 }
