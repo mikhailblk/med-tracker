@@ -64,4 +64,31 @@ class MedicationServiceTest {
         assertEquals("Med2", result.get(1).getName());
         verify(repository, times(1)).findAll();
     }
+    @Test
+    void getMedicationsByPatient_shouldReturnOnlyMatchingPatient() {
+        // Given
+        Medication med1 = new Medication("Med1", "10mg", "08:00");
+        med1.setPatientName("Anna Schmidt");
+        Medication med2 = new Medication("Med2", "20mg", "20:00");
+        med2.setPatientName("Max Mustermann");
+
+        when(repository.findAll()).thenReturn(List.of(med1, med2));
+
+        // When
+        List<MedicationDTO> result = service.getMedicationsByPatient("Anna Schmidt");
+
+        // Then
+        assertEquals(1, result.size());
+        assertEquals("Med1", result.get(0).getName());
+        assertEquals("Anna Schmidt", result.get(0).getPatientName());
+    }
+
+    @Test
+    void deleteMedication_shouldCallRepositoryDeleteById() {
+        // When
+        service.deleteMedication(1L);
+
+        // Then
+        verify(repository, times(1)).deleteById(1L);
+    }
 }

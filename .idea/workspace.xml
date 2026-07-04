@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e9cd6a-d678-41d9-b231-7dca7415359f" name="Changes" comment="M3">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/controller/AppointmentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/controller/MessageControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/service/AppointmentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/service/MessageServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MedicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MedicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medtracker/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/medtracker/service/MedicationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/medtracker/service/MedicationServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +60,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.TrackerApplication.executor": "Run",
+    "JUnit.AppointmentControllerTest.executor": "Run",
+    "JUnit.AppointmentServiceTest.executor": "Run",
     "JUnit.MedicationControllerTest.executor": "Run",
     "JUnit.MedicationControllerTest.getAllMedications_shouldReturnList.executor": "Run",
     "JUnit.MedicationServiceTest.executor": "Run",
+    "JUnit.MessageControllerTest.executor": "Run",
+    "JUnit.MessageServiceTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -83,19 +88,18 @@
       <recent name="com.medtracker.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MedicationControllerTest">
-    <configuration name="TrackerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="DB_URL" value="jdbc:postgresql://dpg-d8pu6i28qa3s73c73csg-a.frankfurt-postgres.render.com:5432/med_tracker_db_v2 DB_USER=med_tracker_db_v2_user DB_PASSWORD=W68f1ewB6h5V9f0wU1wkQgYvpR7holvv" />
-      </envs>
-      <option name="MAIN_CLASS_NAME" value="com.medtracker.TrackerApplication" />
+  <component name="RunManager" selected="JUnit.MessageServiceTest">
+    <configuration name="AppointmentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MedTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.medtracker.repository.*" />
+          <option name="PATTERN" value="com.medtracker.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.medtracker.service" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.service.AppointmentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,25 +112,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="PACKAGE_NAME" value="com.medtracker.controller" />
       <option name="MAIN_CLASS_NAME" value="com.medtracker.controller.MedicationControllerTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MedicationControllerTest.getAllMedications_shouldReturnList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MedTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.medtracker.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.medtracker.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.medtracker.controller.MedicationControllerTest" />
-      <option name="METHOD_NAME" value="getAllMedications_shouldReturnList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,7 +126,7 @@
       <module name="MedTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.medtracker.repository.*" />
+          <option name="PATTERN" value="com.medtracker.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,18 +137,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MedTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medtracker.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="PACKAGE_NAME" value="com.medtracker.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.controller.MessageControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MedTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medtracker.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.medtracker.service" />
+      <option name="MAIN_CLASS_NAME" value="com.medtracker.service.MessageServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.TrackerApplication" />
+      <item itemvalue="JUnit.AppointmentServiceTest" />
+      <item itemvalue="JUnit.MessageControllerTest" />
+      <item itemvalue="JUnit.MessageServiceTest" />
       <item itemvalue="JUnit.MedicationControllerTest" />
-      <item itemvalue="JUnit.MedicationControllerTest.getAllMedications_shouldReturnList" />
       <item itemvalue="JUnit.MedicationServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MedicationControllerTest" />
-        <item itemvalue="Application.TrackerApplication" />
+        <item itemvalue="JUnit.MessageServiceTest" />
         <item itemvalue="JUnit.MedicationServiceTest" />
-        <item itemvalue="JUnit.MedicationControllerTest.getAllMedications_shouldReturnList" />
+        <item itemvalue="JUnit.AppointmentServiceTest" />
+        <item itemvalue="JUnit.MessageControllerTest" />
+        <item itemvalue="JUnit.MedicationControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776619430861</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="M3">
+      <option name="closed" value="true" />
+      <created>1783068420341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783068420341</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
